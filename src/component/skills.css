@@ -1,14 +1,17 @@
 .skills-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
     padding-top: 70px;
     padding-bottom: 100px;
+    padding-left: 20px; /* Default padding for larger screens */
+    padding-right: 20px;
 }
 
 .skills-container img {
-    width: 100px; /* Increased size */
+    width: 100px; /* Default size for larger screens */
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
@@ -19,6 +22,24 @@
     filter: drop-shadow(0 0 10px rgba(92, 90, 90, 0.8)); /* White glow effect */
 }
 
+@media (max-width: 768px) {
+    .skills-container {
+        padding-left: 30px; /* Increased padding for smaller screens */
+        padding-right: 30px;
+    }
+    .skills-container img {
+        width: 80px; /* Reduce size for tablet screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .skills-container {
+        padding-left: 40px; /* More padding for mobile screens */
+        padding-right: 40px;
+    }
+    .skills-container img {
+        width: 60px; /* Reduce size for mobile screens */
+    }
+}
 
 
