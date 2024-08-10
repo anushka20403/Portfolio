@@ -1,60 +1,45 @@
-.container{
+.container {
   display: flex;
   justify-content: center;
 }
 
-.left_col{
+.left_col {
   padding: 50px;
   padding-top: 5px;
   margin-left: 150px;
   margin-top: 0px;
 }
-.hi{
-font-weight: 450;
-font-size: 40px;
-letter-spacing: 2.5px;
-padding-top: 00px;
-margin-top: 15px;
+
+.hi {
+  font-weight: 450;
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  padding-top: 0px;
+  margin-top: 15px;
 }
 
-.para{
-font-weight: 200;
-
-}
 .hi:hover {
-  /* Styles on hover */
   color: rgb(248, 175, 188); /* New text color on hover */
 }
 
-.image{
+.para {
+  font-weight: 200;
+}
+
+.image {
   width: 320px; /* Adjust the width as per your requirement */
   height: auto;
   margin: 50px;
-  margin-top: 30px;
+  margin-top: 0px;
   border-radius: 0px;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 0px;
-
 }
 
-
-.right_col{
+.right_col {
   margin: 50px;
   margin-right: 200px;
   margin-top: 50px;
 }
-
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items vertically */
-  }
-
-  .left_col, .right_col {
-    margin: 20px; /* Adjust margins for stacking */
-  }
-}
-
 
 .download-button1 {
   background-color: white;
@@ -74,4 +59,39 @@ font-weight: 200;
 .download-button1:hover {
   background-color: rgb(39, 39, 39);
   color: white;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text for all child elements */
+  }
+
+  .left_col, .right_col {
+    margin: 30px 0; /* Adjust margins for stacking */
+    padding: 0 60px; /* Increased padding on the sides */
+  }
+
+  .hi {
+    font-size: 35px; /* Adjust the font size for smaller screens */
+    margin-top: 20px; /* Add some margin to separate from other elements */
+  }
+
+  .para {
+    margin: 20px 0; /* Add margin to separate from other elements */
+    margin-bottom: 40px;
+    font-weight: 200;
+  }
+
+  .download-button1 {
+    margin: 20px auto 0 auto; /* Center the button horizontally and add top margin */
+    display: block; /* Ensure the button is treated as a block element */
+  }
+
+  .image {
+    margin: 30px auto 0 auto; /* Center the image horizontally */
+    width: 250px; /* Adjust the width for smaller screens */
+  }
 }
