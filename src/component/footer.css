@@ -1,0 +1,122 @@
+.contact-footer {
+    background-color: #222;
+    color: white;
+    padding: 50px;
+    margin: 50px; /* Margin around the contact footer */
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-around; /* Space between left and right on larger screens */
+    gap: 20px; /* Space between sections */
+  }
+  
+  .contact-left {
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .contact-form {
+    width: 80%; /* Adjust the width of the form */
+    max-width: 400px; /* Maximum width for larger screens */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-right: 20px; /* Space between form and info on larger screens */
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+.h11{
+    padding-top: 0;
+}
+  
+  .contact-form label {
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid white; /* White border for inputs */
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent input background */
+    color: white; /* Text color */
+  }
+  
+  .contact-form textarea {
+    min-height: 100px; /* Set minimum height for textarea */
+  }
+  
+  .contact-form .download-button2 {
+    background-color: white;
+    color: rgb(39, 39, 39);
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-size: 16px;
+    align-self: center; /* Center button horizontally */
+    margin-right: 0px;
+  }
+  
+  .contact-form .download-button2:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+  }
+  
+  .contact-right {
+    flex: 1; /* Take up 50% of the width */
+    max-width: 400px; /* Maximum width for larger screens */
+  }
+  
+  .contact-info {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Media query for screens smaller than 768px (typical tablet and mobile screens) */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column; /* Stack content vertically */
+    }
+
+    .contact-footer{
+      margin-left: 40px;
+      margin-right: 40px;
+      padding-right: 30px;
+    }
+  
+    .contact-left,
+    .contact-right {
+      width: 100%; /* Take full width on smaller screens */
+      max-width: none; /* Remove max-width on smaller screens */
+      margin-right: 0; /* Remove margin between form and info on smaller screens */
+    }
+  
+    .contact-form {
+      width: 100%; /* Take full width on smaller screens */
+      max-width: none; /* Remove max-width on smaller screens */
+      margin-bottom: 20px; /* Add space between form and info on smaller screens */
+    }
+  }
+  

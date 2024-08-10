@@ -1,0 +1,161 @@
+ /*.edu {
+    margin: 5em auto;
+    max-width: 26em;
+    margin-top: 40px;
+    position: relative;
+}
+
+.edu h1 {
+    padding-left: 150px;
+    margin-bottom: 50px;
+}
+
+.checkpoint {
+    position: relative;
+    max-width: 34em;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 20px; /* Added padding-left to create space for the border 
+}
+
+.checkpoint h4 {
+    margin-bottom: 0;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.checkpoint h5 {
+    margin-top: 5px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.checkpoint p {
+    margin-top: 0;
+    font-weight: 200;
+    padding-top: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.checkpoint:nth-child(odd) {
+    border-right: 3px solid white;
+    transform: translateX(50%);
+}
+
+.checkpoint:nth-child(even) {
+    border-left: 3px solid white;
+    transform: translateX(-50%);
+}
+
+
+*/
+.edu {
+    margin: 5em auto;
+    max-width: 26em;
+    margin-top: 40px;
+    position: relative;
+}
+
+.edu h1 {
+    padding-left: 150px;
+    margin-bottom: 50px;
+}
+
+.checkpoint,
+.checkpoint1 {
+    max-width: 34em;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.checkpoint:hover,
+.checkpoint1:hover {
+    border: 2px solid rgb(69, 68, 68);
+
+}
+
+
+
+.checkpoint::before,
+.checkpoint1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 2px solid white;
+}
+
+.checkpoint::before {
+    left: -25px;
+    right: auto;
+}
+
+.checkpoint1::before {
+    right: -25px;
+    left: auto;
+}
+
+.checkpoint h4,
+.checkpoint1 h4 {
+    margin-bottom: 0;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.checkpoint h5,
+.checkpoint1 h5 {
+    margin-top: 5px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.checkpoint:nth-child(even) {
+    transform: translateX(50%);
+}
+
+.checkpoint1 {
+    transform: translateX(-60.5%);
+}
+
+
+.checkpoint p,
+.checkpoint1 p {
+    margin-top: 0;
+    font-weight: 200;
+    padding-top: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media query for screens up to 600px wide */
+@media screen and (max-width: 1000px) {
+    .checkpoint,
+    .checkpoint1 {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: none;
+    }
+    .checkpoint:nth-child(even) {
+        transform: none;
+    }
+    
+    .checkpoint1 {
+        transform: none;
+    }
+
+    .checkpoint::before,
+    .checkpoint1::before {
+        display: none;
+    }
+}
+
+

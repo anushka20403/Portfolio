@@ -1,0 +1,170 @@
+/* Heading */
+.hh {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: white;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Project Container */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+/* Project Boxes */
+.pro1, .pro2 {
+    background-color: rgba(39, 39, 39, 0.3); /* Increased transparency */
+    padding: 15px;
+    flex: 0 1 400px;
+    max-width: 400px;
+    border: 2px solid white; /* White border */
+    border-radius: 10px; /* Optional: Rounded corners for a modern look */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Shine effect */
+.pro1::after, .pro2::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.13);
+    transform: rotate(30deg);
+    transition: all 0.6s;
+}
+
+.pro1:hover::after, .pro2:hover::after {
+    left: 120%;
+    transition: all 0.6s;
+}
+
+/* Hover Effects */
+.pro1:hover, .pro2:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(39, 39, 39, 0.5); /* Slightly less transparent on hover */
+}
+
+/* Images */
+.proimg1, .proimg2 {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pro1:hover .proimg1, .pro2:hover .proimg2 {
+    transform: scale(1.05);
+}
+
+/* Paragraphs */
+.pp2 {
+    font-weight: 400;
+    color: white;
+    font-size: 0.85em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    max-height: 100px;
+    overflow: hidden;
+}
+.pp1 {
+    font-weight: 100;
+    color: white;
+    font-size: 0.85em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+/* Titles */
+.ph3 {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+/* Button */
+.download-button {
+    background-color: white;
+    color: rgb(39, 39, 39);
+    border: none;
+    padding: 10px 17px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-size: 13px;
+    border-radius: 0px; /* Rounded corners */
+    display: block;
+    margin: 10px auto;
+    outline: none;
+}
+
+.download-button:hover {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        gap: 30px;
+    }
+
+    .pro1, .pro2 {
+        padding: 12px;
+        max-width: 100%;
+    }
+
+    .download-button {
+        margin-left: 0;
+        display: block;
+        margin: 10px auto 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hh {
+        font-size: 2em;
+    }
+
+    .pp1, .pp2 {
+        font-size: 0.8em;
+    }
+
+    .ph3 {
+        font-size: 1em;
+    }
+
+    .download-button {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+}
+
+
