@@ -1,153 +1,75 @@
-.big_container {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
 
-.big_container:hover {
-  background-color: #e0e0e0;
-}
 
-.container2 {
+.container2{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+/*  background-color: #012c56 ; */
 }
 
-.right_col2 {
-  padding: 30px;
-  margin-right: 50px;
+.right_col2{
+  padding: 50px;
+  margin-right: 100px; /* Reduce the margin-right to make the div wider */
   margin-top: 0;
-  flex: 1;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1; /* Allow the right column to take up more space */
 }
-
-.right_col2:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.wh3 {
+.wh3{
   font-weight: 200;
-  color: #666;
+}
+.wh2{
+font-weight: 400;
+margin-top: 0;
 }
 
-.wh2 {
-  font-weight: 400;
-  margin-top: 0;
-  color: #333;
-  border-bottom: 2px solid #012c56;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-.wp {
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: #444;
+.wp{
+font-weight: 400; /* Increase font-weight for the introductory text */
+margin-bottom: 15px; /* Space after the introductory text */
 }
 
 .right_col2 p {
-  font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
+  font-weight: 300; /* Lighter font-weight for bullet points */
+  margin-top: 0; /* Remove space above bullet points */
+  margin-bottom: 5px; /* Adjust space between bullet points */
 }
 
-.right_col2 p::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #012c56;
-}
-
-h1 {
-  padding-top: 20px;
-  font-weight: 450;
-  text-align: center;
-  color: #012c56;
-  transition: color 0.3s ease;
+h1{
+padding-top: 20px;
+font-weight: 450;
 }
 
 h1:hover {
-  color: rgb(248, 175, 188);
+  color: rgb(248, 175, 188); /* New text color on hover */
 }
 
 .image2 {
-  width: 200px;
+  width: 200px; /* Adjust the width as per your requirement */
   height: auto;
   margin: 50px;
   margin-top: 35px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  border-radius: 10px; /* Ensure rounded corners */
 }
 
 .image2:hover {
-  transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1); /* Zoom in */
 }
 
-.left_col2 {
+.left_col2{
   margin: 40px;
   margin-left: 200px;
   margin-top: 20px;
 }
 
-.Title {
+.Title{
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 1024px) {
   .container2 {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items vertically */
   }
 
   .left_col2, .right_col2 {
-    margin: 10px;
-    width: 90%;
+    margin: 20px; /* Adjust margins for stacking */
   }
-
-  .image2 {
-    margin: 20px auto;
-    display: block;
-  }
-
-  .right_col2 {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  .wh2 {
-    font-size: 20px;
-  }
-
-  .wh3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .big_container {
-    padding: 10px;
-  }
-
-  .right_col2 {
-    padding: 15px;
-  }
-
-  .image2 {
-    width: 150px;
-  }
-}
