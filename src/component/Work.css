@@ -69,7 +69,6 @@ h1:hover {
 @media (max-width: 1024px) {
   .container2 {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items vertically */
   }
 
   .left_col2, .right_col2 {
