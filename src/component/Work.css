@@ -1,4 +1,6 @@
-
+/*.big_container{
+ background-color: #012c56;
+}*/
 
 .container2{
   display: flex;
@@ -73,3 +75,4 @@ h1:hover {
   .left_col2, .right_col2 {
     margin: 20px; /* Adjust margins for stacking */
   }
+}
