@@ -82,4 +82,7 @@ h1:hover {
     text-align: center; /* Center the text */
    margin-bottom: 40px;
   }
+ .wp {
+  text-align:left;
+ }
 }
