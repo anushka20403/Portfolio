@@ -133,7 +133,7 @@ a {
 
 @media (max-width: 768px) {
     .project {
-        gap: 30px;
+        gap: 50px;
     }
 
     .pro1, .pro2 {
