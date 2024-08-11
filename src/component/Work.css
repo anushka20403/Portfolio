@@ -76,4 +76,9 @@ h1:hover {
     margin: 0px; /* Adjust margins for stacking */
    gap: 10px;
   }
+  .right_col2 {
+    padding: 15px; 
+    width: 90%; 
+    text-align: center; /* Center the text */
+  }
 }
