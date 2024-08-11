@@ -33,6 +33,7 @@
   margin-top: 0px;
   border-radius: 0px;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease;
 }
 .image:hover {
   transform: scale(0.9); /* Zoom out */
