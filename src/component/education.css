@@ -85,6 +85,9 @@
 
 /* Media query for screens up to 600px wide */
 @media screen and (max-width: 1000px) {
+    .edu{
+        width:90%;
+    }
     .checkpoint,
     .checkpoint1 {
         max-width: 100%;
