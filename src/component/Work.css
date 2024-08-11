@@ -73,6 +73,6 @@ h1:hover {
   }
 
   .left_col2, .right_col2 {
-    margin: 20px; /* Adjust margins for stacking */
+    margin: 0px; /* Adjust margins for stacking */
   }
 }
